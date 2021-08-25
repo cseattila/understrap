@@ -1,1 +1,26 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+.bloginfo-title {
+	display: inline-block; 
+	margin:auto;
+background: rgb(152,81,4);
+background: linear-gradient(90deg, rgba(152,81,4,0.9920343137254902) 0%, rgba(227,230,118,1) 30%, rgba(193,162,64,1) 78%, rgba(152,81,0,1) 100%);
+    min-height: 30px;
+    min-width: 480px;
+    width :70%;
+    text-align: center;
+    color: white;
+}
+
+
+#wrapper-navbar {
+	display: inline-block; 
+}
+
+.inner-content {
+	display: inline-block; 
+}
+
+#single-wrapper .row{
+	max-width: 720px;
+	
+}

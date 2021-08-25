@@ -25,23 +25,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">
 
-	<!-- ******************* The Navbar Area ******************* -->
-	<div id="wrapper-navbar">
-
-		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
-
-		<nav id="main-nav" class="bg-primary" aria-labelledby="main-nav-label">
-
-			<h2 id="main-nav-label" class="sr-only">
-				<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
-			</h2>
-
-
-		<?php if ( 'container' === $container ) : ?>
+	<?php if ( 'container' === $container ) : ?>
 			<div class="container">
 		<?php endif; ?>
 
-					<!-- Your site title as branding in the menu -->
+<div class="top-part" > 
+                <!-- Your site title as branding in the menu -->
 					<?php if ( ! has_custom_logo() ) { ?>
 
 						<?php if ( is_front_page() && is_home() ) : ?>
@@ -57,33 +46,56 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<?php
 					} else {
 						the_custom_logo();
-					}
-					?>
+						?>
+						<div class ="bloginfo-title" >
+						 <?php bloginfo( 'name' );?>
+						 </div>
+					<?php }	?>
 					<!-- end custom logo -->
+</div>
+	<?php if ( 'container' === $container ) : ?>
+			</div><!-- .container -->
+			<?php endif; ?>
+<div class= "main-content">
+	<?php if ( 'container' === $container ) : ?>
+			<div class="container">
+		<?php endif; ?>
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+	<!-- ******************* The Navbar Area ******************* -->
+	<div id="wrapper-navbar">
+
+		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
+
+		<nav id="main-nav" class="bg-navbar" aria-labelledby="main-nav-label">
+
+			<h2 id="main-nav-label" class="sr-only">
+				<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
+			</h2>
+
+
+	
+					
+
+				
 
 				<!-- The WordPress Menu goes here -->
 				<?php
 				wp_nav_menu(
 					array(
 						'theme_location'  => 'primary',
-						'container_class' => 'collapse navbar-collapse',
+						'container_class' => 'ET-main-menu',
 						'container_id'    => 'navbarNavDropdown',
 						'menu_class'      => 'navbar-nav ml-auto nav_ertek',
 						'fallback_cb'     => '',
 						'menu_id'         => 'main-menu',
-						'depth'           => 2,
+						'depth'           => 3,
 						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 					)
 				);
 				?>
-			<?php if ( 'container' === $container ) : ?>
-			</div><!-- .container -->
-			<?php endif; ?>
+		
 
 		</nav><!-- .site-navigation -->
 
 	</div><!-- #wrapper-navbar end -->
+<div class="inner-content">

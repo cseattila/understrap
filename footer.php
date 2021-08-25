@@ -12,7 +12,12 @@ defined( 'ABSPATH' ) || exit;
 
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
+</div> <!-- end inner content -->
 
+</div> <!-- end mian content -->
+	<?php if ( 'container' === $container ) : ?>
+			</div><!-- .container -->
+			<?php endif; ?>
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
 <div class="wrapper" id="wrapper-footer">

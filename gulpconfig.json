@@ -1,6 +1,6 @@
 {
 	"browserSyncOptions": {
-		"proxy": "https://localhost/",
+		"proxy": "http://localhost/",
 		"notify": false,
 		"files": ["./css/*.min.css", "./js/*.min.js", "./**/*.php"]
 	},
