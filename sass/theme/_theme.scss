@@ -24,3 +24,43 @@ background: linear-gradient(90deg, rgba(152,81,4,0.9920343137254902) 0%, rgba(22
 	max-width: 720px;
 	
 }
+
+#index-wrapper .row{
+	max-width: 720px;
+	
+}
+
+#main-menu .menu-item {
+	  color: white;
+	margin: 5px 5px 5px 5px;
+	background: #597d8b;
+	padding: 10px 5px 5px 5px;
+	border-radius: 3px;
+	text-align: center;
+}
+
+
+#main-menu .menu-item  a {
+	  color: white;
+	
+}
+
+.site-footer .site-info {
+	background-image: url('/wp-content/themes/understrap/src/img/ornamens.png');
+	 color: white;
+    height: 90px;
+
+     background-repeat: no-repeat;
+ background-size: 100% ;
+text-align: right;
+  vertical-align: bottom;
+}
+
+.site-footer .site-info p{
+	 color: white;
+    height: 20px;
+margin-top: 60px;   
+  display: inline-block;
+text-align: right;
+  vertical-align: bottom;
+}
