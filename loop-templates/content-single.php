@@ -8,6 +8,20 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 ?>
+<?php
+//Local helpers 
+
+function is_telepulesi_ertek() {
+    $ret = false;
+    foreach (get_the_category() as &$value) {
+        if ( $value->slug  == "telepulesi-ertek") {
+            $ret = true; 
+        }
+    }
+    return $ret;
+}
+
+?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
@@ -17,7 +31,7 @@ defined( 'ABSPATH' ) || exit;
 
 		<div class="entry-meta">
 
-			<?php understrap_posted_on(); ?>
+		
 
 		</div><!-- .entry-meta -->
 
@@ -26,7 +40,11 @@ defined( 'ABSPATH' ) || exit;
 	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
 	<div class="entry-content">
-
+        <?php echo "helo a post tipusa települési ertek :". (is_telepulesi_ertek()?" igen ": "nem ");
+        
+              
+        ?>
+        
 		<?php the_content(); ?>
 
 		<?php
