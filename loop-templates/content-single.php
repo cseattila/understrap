@@ -100,19 +100,19 @@ function get_ertek_kategoria_szin(){
 	</div>
 	
 	<div class="ertek-leiras">
-	<?php the_content(); ?>
+	 <?php the_content(); ?>
 	</div>
 	
 	<div class="ertek-benyujto">
-	<?php echo implode(", ",get_post_custom_values('javaslatot benyujtó')); ?>
+	 Javaslatot benyujtó: <?php echo implode(", ",get_post_custom_values('javaslatot benyujtó')); ?>
 	</div>
 	
 	<div class="ertek-idopont">
-	<?php echo implode(", ",get_post_custom_values('benyujtas_idopontja')); ?>
+	Beadás ideje: <?php echo implode(", ",get_post_custom_values('benyujtas_idopontja')); ?>
 	</div>
 	
 	<div class="ertek-forras">
-	<?php echo implode(", ",get_post_custom_values('forrás')); ?>
+	Forrás: <?php echo implode("</br>",get_post_custom_values('forrás')); ?>
 	</div>
 	
 	
