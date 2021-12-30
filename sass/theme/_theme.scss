@@ -21,7 +21,7 @@ vertical-align: middle;
 .eretek-name-main {
   color: white;
   padding:6px;
- 
+ 	font-family: 'Roboto Black';
   height:50px;
 }
 .eretek-disz-szunet {
@@ -61,6 +61,15 @@ vertical-align: middle;
 	background-image: url('/wp-content/themes/understrap/src/img/hatter.jpg');
 }
 
+
+.webcim{
+	  color: #d6b56e;	
+	font-size: 25px;
+	width :250px;
+	text-align: center;
+	font-family: 'Roboto Black';
+}
+
 #main-menu .menu-item {
 	  color: white;
 	margin: 5px 5px 5px 5px;
@@ -68,10 +77,13 @@ vertical-align: middle;
 	padding: 10px 5px 5px 5px;
 	border-radius: 3px;
 	text-align: center;
+	font-family: 'Roboto Black';
 }
 
 
-
+.ertek-leiras {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 #main-menu .menu-item  a {
 	  color: white;

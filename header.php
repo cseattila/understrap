@@ -18,6 +18,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
 	<?php wp_head(); ?>
 </head>
 
@@ -56,6 +57,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<?php
 					} else {
 						the_custom_logo();
+						?>
+						<div class="webcim"> Makó város értéktárának kincsei </div>
+						
+					<?php 
 					}
 					?>
 					<!-- end custom logo -->
