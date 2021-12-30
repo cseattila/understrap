@@ -14,16 +14,85 @@ defined( 'ABSPATH' ) || exit;
 function is_telepulesi_ertek() {
     $ret = false;
     foreach (get_the_category() as &$value) {
-        if ( $value->slug  == "telepulesi-ertek") {
+        if ( $value->slug  == "ertek-megj") {
             $ret = true; 
         }
     }
     return $ret;
 }
 
+function the_galeria_content($galeria_post  ) {
+    $content = get_the_content( null, false ,$galeria_post);
+    
+    /**
+     * Filters the post content.
+     *
+     * @since 0.71
+     *
+     * @param string $content Content of the current post.
+     */
+    $content = apply_filters( 'the_content', $content );
+    $content = str_replace( ']]>', ']]&gt;', $content );
+    echo $content;
+}
+
+
+function showGaleria(){
+    foreach ( get_post_custom_values('galÃ©ria') as &$value) {
+        $galeria_post = get_post($value);
+?>
+    <div class="ertek-galeria">
+    
+    <?php echo $galeria_post->post_title; 
+    
+    the_galeria_content($galeria_post);
+    ?>
+    
+    
+	</div>
+	
+<?php 
+    }
+}
+
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+
+<?php if ( is_telepulesi_ertek() ) { ?> 
+
+<!-- a kï¿½p  -->
+<div class="erek-leftside" > </div>
+
+<div class="ertek-rightside">
+	<div class="eretk-friz">
+	
+	</div>
+	<div class="ertek-name " >
+	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	</div>
+	
+	<div class="ertek-leiras">
+	<?php the_content(); ?>
+	</div>
+	
+	<div class="ertek-benyujto">
+	<?php echo implode(", ",get_post_custom_values('javaslatot benyujtÃ³')); ?>
+	</div>
+	
+	<div class="ertek-idopont">
+	<?php echo implode(", ",get_post_custom_values('benyujtas_idopontja')); ?>
+	</div>
+	
+	<div class="ertek-forras">
+	<?php echo implode(", ",get_post_custom_values('forrÃ¡s')); ?>
+	</div>
+	
+	
+	<?php showGaleria(); ?>
+</div>
+
+<?php }else {?>
 
 	<header class="entry-header">
 
@@ -31,7 +100,7 @@ function is_telepulesi_ertek() {
 
 		<div class="entry-meta">
 
-		
+			
 
 		</div><!-- .entry-meta -->
 
@@ -40,7 +109,7 @@ function is_telepulesi_ertek() {
 	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
 	<div class="entry-content">
-        <?php echo "helo a post tipusa települési ertek :". (is_telepulesi_ertek()?" igen ": "nem ");
+        <?php echo "helo a post tipusa telepï¿½lï¿½si ertek :". (is_telepulesi_ertek()?" igen ": "nem ");
         
               
         ?>
@@ -63,5 +132,5 @@ function is_telepulesi_ertek() {
 		<?php understrap_entry_footer(); ?>
 
 	</footer><!-- .entry-footer -->
-
+<?php } ?>
 </article><!-- #post-## -->
