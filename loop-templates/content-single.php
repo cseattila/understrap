@@ -38,12 +38,15 @@ function the_galeria_content($galeria_post  ) {
 
 
 function showGaleria(){
+    if (!get_post_custom_values('galéria'))
+        return;
     foreach ( get_post_custom_values('galéria') as &$value) {
         $galeria_post = get_post($value);
 ?>
     <div class="ertek-galeria">
     
-    <?php echo $galeria_post->post_title; 
+    <?php 
+   //echo $galeria_post->post_title; 
     
     the_galeria_content($galeria_post);
     ?>
@@ -55,6 +58,22 @@ function showGaleria(){
     }
 }
 
+
+function get_ertek_kategoria_property($prop,$default){
+    $ret = $default;
+    foreach (get_the_category() as &$value) {
+        $szin = get_term_meta($value->term_id,$prop,true);
+        if (!empty($szin)) {
+            $ret =  $szin;
+        }
+    }
+    return $ret;
+}
+
+function get_ertek_kategoria_szin(){
+    return get_ertek_kategoria_property('ert_szin',"#F0F0F0");
+}
+
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
@@ -62,14 +81,22 @@ function showGaleria(){
 <?php if ( is_telepulesi_ertek() ) { ?> 
 
 <!-- a k�p  -->
-<div class="erek-leftside" > </div>
+<div class="erek-leftside" >
+
+</div>
 
 <div class="ertek-rightside">
 	<div class="eretk-friz">
-	
+	&nbsp;
 	</div>
-	<div class="ertek-name " >
-	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	<div class="ertek-name"  >
+		<div style="background-color: <?php echo get_ertek_kategoria_szin();?>" class="eretek-disz-sp1" > &nbsp; </div>
+		<div class="eretek-disz-szunet">&nbsp; </div>
+		<div class="eretek-name-main-content" style="background-color: <?php echo get_ertek_kategoria_szin();?>" > 
+			<?php the_title( '<div class="eretek-name-main" >', '</div>' ); ?>
+		</div>
+		<div class="ertek-name-cimer" >&nbsp;</div>
+		<div class="ertek-name-cimer-veg" style="background-color: <?php echo get_ertek_kategoria_szin();?>" >&nbsp;</div>
 	</div>
 	
 	<div class="ertek-leiras">
@@ -90,6 +117,7 @@ function showGaleria(){
 	
 	
 	<?php showGaleria(); ?>
+
 </div>
 
 <?php }else {?>

@@ -12,29 +12,34 @@ defined( 'ABSPATH' ) || exit;
 
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
-</div> <!-- end inner content -->
 
-</div> <!-- end mian content -->
-	<?php if ( 'container' === $container ) : ?>
-			</div><!-- .container -->
-			<?php endif; ?>
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
+<div class="wrapper" id="wrapper-footer">
 
+	<div class="<?php echo esc_attr( $container ); ?>">
 
+		<div class="row">
 
+			<div class="col-md-12">
 
 				<footer class="site-footer" id="colophon">
 
 					<div class="site-info">
 
-				     <p>József Attila Múzeum 2022 ©</p>
+						<?php understrap_site_info(); ?>
 
 					</div><!-- .site-info -->
 
 				</footer><!-- #colophon -->
 
+			</div><!--col end -->
 
+		</div><!-- row end -->
+
+	</div><!-- container end -->
+
+</div><!-- wrapper end -->
 
 </div><!-- #page we need this extra closing tag here -->
 

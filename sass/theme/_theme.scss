@@ -1,34 +1,60 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
-.bloginfo-title {
-	display: inline-block; 
-	margin:auto;
-background: rgb(152,81,4);
-background: linear-gradient(90deg, rgba(152,81,4,0.9920343137254902) 0%, rgba(227,230,118,1) 30%, rgba(193,162,64,1) 78%, rgba(152,81,0,1) 100%);
-    min-height: 30px;
-    min-width: 480px;
-    width :70%;
-    text-align: center;
-    color: white;
+
+
+.eretk-friz {
+	background-image: url('/wp-content/themes/understrap/src/img/ornamens.png');
+		height:20px;
+		background-size:  contain, cover;
+}
+.eretek-disz-sp1 {
+	width:70px;	
+	height:50px;
+	vertical-align: middle;
+}
+
+.eretek-name-main-content {
+ 
+  width:  calc(100% - 200px);
+vertical-align: middle;
+}
+
+.eretek-name-main {
+  color: white;
+  padding:6px;
+ 
+  height:50px;
+}
+.eretek-disz-szunet {
+	width:5px;
+
+	background-color: transparent;
+}
+.ertek-name div {
+	display: inline-block;
+
+}
+
+.ertek-name  {
+	margin-top: 25px;
+	height:70px;
 }
 
 
-#wrapper-navbar {
-	display: inline-block; 
+
+.ertek-name-cimer {
+	height:68px;
+	width:68px;
 }
 
-.inner-content {
-	display: inline-block; 
+.ertek-name-cimer-veg{
+		width:38px;	
+	height:50px;
+	vertical-align: middle;
 }
 
-#single-wrapper .row{
-	max-width: 720px;
-	
-}
 
-#index-wrapper .row{
-	max-width: 720px;
-	
-}
+
+
 
 #main-menu .menu-item {
 	  color: white;
@@ -45,22 +71,5 @@ background: linear-gradient(90deg, rgba(152,81,4,0.9920343137254902) 0%, rgba(22
 	
 }
 
-.site-footer .site-info {
-	background-image: url('/wp-content/themes/understrap/src/img/ornamens.png');
-	 color: white;
-    height: 90px;
 
-     background-repeat: no-repeat;
- background-size: 100% ;
-text-align: right;
-  vertical-align: bottom;
-}
 
-.site-footer .site-info p{
-	 color: white;
-    height: 20px;
-margin-top: 60px;   
-  display: inline-block;
-text-align: right;
-  vertical-align: bottom;
-}
