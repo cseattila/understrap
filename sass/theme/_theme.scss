@@ -53,8 +53,13 @@ vertical-align: middle;
 }
 
 
+.bg-primary-ertektar {
+		background: #b0402e;
+}
 
-
+.wrapper{
+	background-image: url('/wp-content/themes/understrap/src/img/hatter.jpg');
+}
 
 #main-menu .menu-item {
 	  color: white;
@@ -64,6 +69,8 @@ vertical-align: middle;
 	border-radius: 3px;
 	text-align: center;
 }
+
+
 
 
 #main-menu .menu-item  a {
