@@ -18,11 +18,26 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+  <script type="text/javascript">
+	function  afterloadMenu(){
+  	let dropdowns = document.querySelectorAll('.dropdown-toggle2')
+	dropdowns.forEach((dd)=>{
+    dd.addEventListener('mouseover', function (e) {
+        var el = this.nextElementSibling
+        el.style.display = el.style.display==='block'?'none':'block'
+    })
+    dd.addEventListener('mouseout', function (e) {
+        var el = this.nextElementSibling
+        el.style.display = el.style.display==='block'?'block':'none'
+    })
+})
+}
+  </script>
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>
+<body <?php body_class(); ?> <?php understrap_body_attributes(); ?> onload="afterloadMenu()" >
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">
 

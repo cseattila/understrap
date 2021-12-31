@@ -197,10 +197,20 @@ if ( ! class_exists( 'Understrap_WP_Bootstrap_Navwalker' ) ) {
 				$atts['class']         = 'dropdown-toggle nav-link';
 				$atts['id']            = 'menu-item-dropdown-' . $item->ID;
 			} else {
+			   
 				$atts['href'] = ! empty( $item->url ) ? $item->url : '#';
 				// Items in dropdowns use .dropdown-item instead of .nav-link.
 				if ( $depth > 0 ) {
-					$atts['class'] = 'dropdown-item';
+				    
+				    if (isset( $args->has_children ) && $args->has_children) {
+				        $atts['class']  = 'dropdown-item dropdown-toggle2';
+				        $atts['href']          = '#';
+				        $atts['aria-haspopup'] = 'true';
+				        $atts['aria-expanded'] = 'false';
+				        $atts['data-bs-toggle']= 'dropdown';
+				    } else {
+					   $atts['class']   = 'dropdown-item';
+				    }
 				} else {
 					$atts['class'] = 'nav-link';
 				}
