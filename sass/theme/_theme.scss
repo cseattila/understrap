@@ -30,7 +30,7 @@ vertical-align: middle;
 	background-color: transparent;
 }
 .ertek-name div {
-	display: inline-block;
+		float:left; 
 
 }
 
@@ -42,13 +42,14 @@ vertical-align: middle;
 
 
 .ertek-name-cimer {
+	float:left; 
 	height:68px;
 	width:68px;
 	vertical-align: top;
 	margin: 0;
 	padding: 0;
 	border: 0;	
-	background-color: #b0402e;
+	background-color:transparent;
 	position: relative;
 	top:-8px;
 	background-size:  contain, contain;
