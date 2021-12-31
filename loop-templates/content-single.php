@@ -74,15 +74,19 @@ function get_ertek_kategoria_szin(){
     return get_ertek_kategoria_property('ert_szin',"#F0F0F0");
 }
 
+function get_ertek_kategoria_cimer(){
+    return get_ertek_kategoria_property('ert_cimer',"wp-content/uploads/2021/08/HUN_Mako_Cimer_2.png");
+}
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 <?php if ( is_telepulesi_ertek() ) { ?> 
 
-<!-- a k�p  -->
+<!-- a kép  -->
 <div class="erek-leftside" >
-
+<img src="<?php echo  get_post_custom_values('fo_kep')[0] ?>" />
+	&nbsp;
 </div>
 
 <div class="ertek-rightside">
@@ -95,24 +99,27 @@ function get_ertek_kategoria_szin(){
 		<div class="eretek-name-main-content" style="background-color: <?php echo get_ertek_kategoria_szin();?>" > 
 			<?php the_title( '<div class="eretek-name-main" >', '</div>' ); ?>
 		</div>
-		<div class="ertek-name-cimer" >&nbsp;</div>
+		<div class="ertek-name-cimer" style="background-image: url(' <?php echo get_ertek_kategoria_cimer();?>') ">&nbsp;</div>
 		<div class="ertek-name-cimer-veg" style="background-color: <?php echo get_ertek_kategoria_szin();?>" >&nbsp;</div>
 	</div>
 	
+	<div class="ertek-leiras-container">
 	<div class="ertek-leiras">
 	 <?php the_content(); ?>
+	 </div>
 	</div>
 	
-	<div class="ertek-benyujto">
-	 Javaslatot benyujtó: <?php echo implode(", ",get_post_custom_values('javaslatot benyujtó')); ?>
-	</div>
+	<div class="javaslatot-ido-container" >
+    	<div class="ertek-benyujto">
+    	 Javaslatot benyujtó: <?php echo implode(", ",get_post_custom_values('javaslatot benyujtó')); ?>
+    	</div>
 	
-	<div class="ertek-idopont">
-	Beadás ideje: <?php echo implode(", ",get_post_custom_values('benyujtas_idopontja')); ?>
+    	<div class="ertek-idopont">
+    	Beadás ideje: <?php echo implode(", ",get_post_custom_values('benyujtas_idopontja')); ?>
+    	</div>
 	</div>
-	
 	<div class="ertek-forras">
-	Forrás: <?php echo implode("</br>",get_post_custom_values('forrás')); ?>
+	Forrás: </br> <?php echo implode("</br>",get_post_custom_values('forrás')); ?>
 	</div>
 	
 	
@@ -144,7 +151,7 @@ function get_ertek_kategoria_szin(){
         
 		<?php the_content(); ?>
 
-		<?php
+		<?php 
 		wp_link_pages(
 			array(
 				'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
@@ -157,7 +164,7 @@ function get_ertek_kategoria_szin(){
 
 	<footer class="entry-footer">
 
-		<?php understrap_entry_footer(); ?>
+		<?php  understrap_entry_footer(); ?>
 
 	</footer><!-- .entry-footer -->
 <?php } ?>

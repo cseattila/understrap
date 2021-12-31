@@ -44,6 +44,13 @@ vertical-align: middle;
 .ertek-name-cimer {
 	height:68px;
 	width:68px;
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+	border: 0;	
+	background-color: #b0402e;
+	position: relative;
+	top:-8px;
 }
 
 .ertek-name-cimer-veg{
@@ -70,6 +77,16 @@ vertical-align: middle;
 	font-family: 'Roboto Black';
 }
 
+.erek-leftside {
+	width :48%;
+	display: inline-block;
+	vertical-align: top;
+}
+.ertek-rightside{
+	width :48%;
+	display: inline-block;
+}
+
 #main-menu .menu-item {
 	  color: white;
 	margin: 5px 5px 5px 5px;
@@ -84,7 +101,27 @@ vertical-align: middle;
 .ertek-leiras {
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	text-align: justify;
+	
 }
+
+.ertek-leiras-container {
+	padding-left: 80px;
+	
+}
+
+.javaslatot-ido-container {
+	margin-left: 77px;
+	padding-left: 3px;
+	
+	border-left: 6px solid rgb(128, 128, 0);
+	border-top: 0px none;
+	border-right: 0px none;
+	border-bottom: 0px none;
+	
+	border-style: solid;
+}
+
+
 
 #main-menu .menu-item  a {
 	  color: white;
