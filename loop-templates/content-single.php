@@ -99,7 +99,7 @@ function get_ertek_kategoria_cimer(){
 		<div class="eretek-name-main-content" style="background-color: <?php echo get_ertek_kategoria_szin();?>" > 
 			<?php the_title( '<div class="eretek-name-main" >', '</div>' ); ?>
 		</div>
-		<div class="ertek-name-cimer-cont" ><div class="ertek-name-cimer-blk"></div>	<img class="ertek-name-cimer-img" src ="<?php echo get_ertek_kategoria_cimer();?>" /></div>
+		<div class="ertek-name-cimer-cont" style="background-color: <?php echo get_ertek_kategoria_szin();?>" ><div class="ertek-name-cimer-blk"></div>	<img class="ertek-name-cimer-img" src ="<?php echo get_ertek_kategoria_cimer();?>" /></div>
 		<div class="ertek-name-cimer-veg" style="background-color: <?php echo get_ertek_kategoria_szin();?>" >&nbsp;</div>
 	</div>
 	
