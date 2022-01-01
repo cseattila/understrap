@@ -30,12 +30,15 @@ defined( 'ABSPATH' ) || exit;
 
 	</header><!-- .entry-header -->
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+	
 
 	<div class="entry-content">
-
-		<?php the_excerpt(); ?>
-
+		<div class="entry-content-t">
+        	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+        </div>
+        <div class="entry-content-s">
+			<?php the_excerpt(); ?>
+		</div>
 		<?php
 		wp_link_pages(
 			array(
