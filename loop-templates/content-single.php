@@ -147,11 +147,7 @@ function get_ertek_kategoria_cimer(){
 	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
 	<div class="entry-content">
-        <?php echo "helo a post tipusa telep�l�si ertek :". (is_telepulesi_ertek()?" igen ": "nem ");
-        
-              
-        ?>
-        
+      
 		<?php the_content(); ?>
 
 		<?php 
