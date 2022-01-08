@@ -126,7 +126,9 @@ function get_ertek_kategoria_cimer(){
 	
 	
 	<?php showGaleria(); ?>
-
+	<div class="ertek-also-sav-help">
+	&nbsp;
+	</div>
 	<div class="ertek-also-sav">
 	MAKÓI TELEPÜLÉSI ÉRTÉKTÁR
 	</div>

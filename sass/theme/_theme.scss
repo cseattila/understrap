@@ -171,6 +171,7 @@ white-space: nowrap;
 	  color: white;
 	
 }
+
 .ertek-also-sav {
 		  color: white;
 	background: #003953;
@@ -181,6 +182,20 @@ white-space: nowrap;
     width: 50%;
 }
 
+ertek-also-sav-help{
+	display: none;
+}
+
+@media screen and (max-width: 992px) {
+ .ertek-also-sav {
+   width: 100%;
+  }
+
+ertek-also-sav-help{
+	display: block;
+	height: 25px;
+}
+}
 
 .entry-content {
 		display: flex; 
