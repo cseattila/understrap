@@ -8,13 +8,17 @@
 }
 .eretek-disz-sp1 {
 	width:70px;	
-	height:50px;
+
 	vertical-align: middle;
+	-webkit-flex: 1; /* Safari */
+	-ms-flex: 1; /* IE 10 */
+	flex: 1; /* Standard syntax */
+		float:left; 
 }
 
 .eretek-name-main-content {
 
-  width:  calc(100% - 200px);
+  width:  calc(100% - 75px);
 vertical-align: middle;
 }
 
@@ -22,7 +26,8 @@ vertical-align: middle;
   color: white;
   padding:6px;
  	font-family: 'Roboto Black';
-  height:50px;
+
+margin-right: 150px; ;
 font-size: 28px;
 }
 .eretek-disz-szunet {
@@ -30,14 +35,13 @@ font-size: 28px;
 
 	background-color: transparent;
 }
-.ertek-name div {
-		float:left; 
 
-}
 
 .ertek-name  {
 	margin-top: 25px;
-	height:70px;
+	
+	display: -webkit-flex; /* Safari */		
+	display: flex; /* Standard syntax */
 	font-size:28px;
 }
 
@@ -50,8 +54,9 @@ font-size: 28px;
 }
 
 .ertek-name-cimer-img{
-	position: relative;
-	top:-10px;
+	position: absolute;
+	right:50px;
+	top: 35px;
 }
 .ertek-name-cimer-cont {
 	float:left; 
