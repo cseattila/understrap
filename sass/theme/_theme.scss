@@ -93,6 +93,12 @@ font-size: 28px;
 	display: flex; /* Standard syntax */
 }
 
+@media screen and (max-width: 992px) {
+  .erek {
+    flex-direction: column;
+  }
+}
+
 .helper {
     display: inline-block;
     height: 100%;
@@ -102,6 +108,8 @@ font-size: 28px;
 	
 	vertical-align: middle;
 }
+
+
 .erek-leftside {
 
 	padding: 2px;
@@ -110,6 +118,7 @@ font-size: 28px;
 	-ms-flex: 1; /* IE 10 */
 	flex: 1; /* Standard syntax */
 	 text-align: center; margin: 1em 0;
+	float:left; 
 white-space: nowrap;
 }
 .ertek-rightside{
@@ -118,6 +127,8 @@ white-space: nowrap;
 	-webkit-flex: 1; /* Safari */
 	-ms-flex: 1; /* IE 10 */
 	flex: 1; /* Standard syntax */
+		float:left; 
+		
 }
 
 #main-menu .menu-item {
