@@ -8,7 +8,8 @@
 }
 .eretek-disz-sp1 {
 	min-width:70px;	
-width: 70px;
+	width: 70px;
+	max-width: 70px;
 	vertical-align: middle;
 	-webkit-flex: 1; /* Safari */
 	-ms-flex: 1; /* IE 10 */
@@ -18,7 +19,7 @@ width: 70px;
 
 .eretek-name-main-content {
 
-  
+  width:100%;
 vertical-align: middle;
 display: flex;
 }
@@ -56,7 +57,7 @@ display: flex;
 
 .ertek-name-cimer-img{
    position: relative;
-	top :25px;
+	top :5px;
 	
 	width: 45px;
 	height:45px;
