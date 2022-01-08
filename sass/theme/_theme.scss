@@ -85,16 +85,39 @@ font-size: 28px;
 	text-align: center;
 	font-family: 'Roboto Black';
 }
+.erek{
+  width: 100%;
+	min-height: 300px;
+	margin: 0 auto;
+	display: -webkit-flex; /* Safari */		
+	display: flex; /* Standard syntax */
+}
 
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.erek-leftside-img {
+	
+	vertical-align: middle;
+}
 .erek-leftside {
-	width :48%;
-	display: inline-block;
-	vertical-align: top;
+
+	padding: 2px;
+		min-width: 300px;
+	-webkit-flex: 1; /* Safari */
+	-ms-flex: 1; /* IE 10 */
+	flex: 1; /* Standard syntax */
+	 text-align: center; margin: 1em 0;
+white-space: nowrap;
 }
 .ertek-rightside{
-	width :48%;
-	display: inline-block;
-	min-width: 480px;
+ padding: 5px;
+	min-width: 300px;
+	-webkit-flex: 1; /* Safari */
+	-ms-flex: 1; /* IE 10 */
+	flex: 1; /* Standard syntax */
 }
 
 #main-menu .menu-item {
@@ -128,6 +151,7 @@ font-size: 28px;
 	border-bottom: 0px none;
 	
 	border-style: solid;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 

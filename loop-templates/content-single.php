@@ -84,8 +84,10 @@ function get_ertek_kategoria_cimer(){
 <?php if ( is_telepulesi_ertek() ) { ?> 
 
 <!-- a kép  -->
+<div  class="erek">
 <div class="erek-leftside" >
-<img src="<?php echo  get_post_custom_values('fo_kep')[0] ?>" />
+ <span class="helper"></span>
+<img class="erek-leftside-img"  src="<?php echo  get_post_custom_values('fo_kep')[0] ?>" />
 	&nbsp;
 </div>
 
@@ -111,7 +113,7 @@ function get_ertek_kategoria_cimer(){
 	
 	<div class="javaslatot-ido-container" >
     	<div class="ertek-benyujto">
-    	 Javaslatot benyujtó: <?php echo implode(", ",get_post_custom_values('javaslatot benyujtó')); ?>
+    	 Javaslatot benyújtó: <?php echo implode(", ",get_post_custom_values('javaslatot benyujtó')); ?>
     	</div>
 	
     	<div class="ertek-idopont">
@@ -130,6 +132,7 @@ function get_ertek_kategoria_cimer(){
 	</div>
 </div>
 
+</div> <!-- az egész article -->
 <?php }else {?>
 
 	<header class="entry-header">
