@@ -98,6 +98,7 @@ function get_ertek_kategoria_cimer(){
 	<div class="ertek-name"  >
 		<div style="background-color: <?php echo get_ertek_kategoria_szin();?>" class="eretek-disz-sp1" > &nbsp; </div>
 		<div class="eretek-disz-szunet">&nbsp; </div>
+		
 		<div class="eretek-name-main-content" style="background-color: <?php echo get_ertek_kategoria_szin();?>" > 
 			<?php the_title( '<div class="eretek-name-main" >', '</div>' ); ?>
 			<img class="ertek-name-cimer-img" src ="<?php echo get_ertek_kategoria_cimer();?>" />
