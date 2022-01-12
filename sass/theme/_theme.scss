@@ -92,7 +92,7 @@ display: flex;
 	font-size: 32px;
 	width :250px;
 	text-align: center;
-	font-family: 'Roboto Black';
+	font-family: 'TrajanPro-Bold';
 }
 .erek{
   width: 100%;
@@ -214,3 +214,23 @@ ertek-also-sav-help{
 		margin-left: 5px; 
 }
 
+.post .entry-title a {
+	color: rgb(33, 18, 18);
+font-family: '	TrajanPro-Regular';
+}
+
+.understrap-read-more-link {
+	color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+ @font-face {
+  font-family: "TrajanPro-Bold";
+  src: url('/wp-content/themes/understrap/src/img/TrajanPro-Bold.otf');
+  }
+
+ @font-face {
+  font-family: "TrajanPro-Regular";
+  src: url('/wp-content/themes/understrap/src/img/TrajanPro-Regular.otf');
+  }
