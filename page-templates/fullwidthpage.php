@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Full Width Page
+ * Template Name: Teljes szelesseg
  *
  * Template for displaying a page without sidebar even if a sidebar widget is published.
  *
@@ -19,7 +19,18 @@ if ( is_front_page() ) {
 ?>
 
 <div class="wrapper" id="full-width-page-wrapper">
-
+    <div class="main-sideshow-conatiner">
+        <div class="kepek">   
+        &nbsp;
+        </div>
+          <div class="pecset_kotel">
+        &nbsp;
+        </div>
+        <div class="pecset_felso">
+        &nbsp;
+        </div>
+      
+    </div>
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">
 
 		<div class="row">

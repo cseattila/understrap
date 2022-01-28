@@ -242,3 +242,43 @@ font-family: '	TrajanPro-Regular';
   font-family: "TrajanPro-Regular";
   src: url('/wp-content/themes/understrap/src/img/TrajanPro-Regular.otf');
   }
+  
+  
+  .full-width-page-wrapper .container
+  {
+	max-width: 100%;
+}
+
+.main-sideshow-conatiner .kepek {
+	width: 80%;
+	height: 500px;
+	background-color: green;
+	margin: auto;
+}
+
+.main-sideshow-conatiner{
+	position: relative;
+}
+
+.main-sideshow-conatiner .pecset_felso {
+	position: absolute;
+	top:100px;
+	height: 300px;
+	width: 300px;
+	left: calc(50% - 150px);
+	background-image:  url('/wp-content/themes/understrap/src/img/pecset.png'); 
+	background-size: 300px 300px;
+}
+
+.main-sideshow-conatiner .pecset_kotel {
+	position: absolute;
+	background-image:  url('/wp-content/themes/understrap/src/img/kotel.png'); 
+	height: 42px;
+	top:220px;
+    background-size:  contain, cover;
+	width: 100%;
+	left: 0px;
+	
+	
+}
+
