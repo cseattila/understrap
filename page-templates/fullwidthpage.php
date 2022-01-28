@@ -16,12 +16,31 @@ $container = get_theme_mod( 'understrap_container_type' );
 if ( is_front_page() ) {
 	get_template_part( 'global-templates/hero' );
 }
+
+
+function the_main_page_sideshow_content( $more_link_text = null, $strip_teaser = false ,$post= null ) {
+    $content = get_the_content( $more_link_text, $strip_teaser ,$post);
+    
+    /**
+     * Filters the post content.
+     *
+     * @since 0.71
+     *
+     * @param string $content Content of the current post.
+     */
+    $content = apply_filters( 'the_content', $content );
+    $content = str_replace( ']]>', ']]&gt;', $content );
+    echo $content;
+}
 ?>
 
 <div class="wrapper" id="full-width-page-wrapper">
     <div class="main-sideshow-conatiner">
         <div class="kepek">   
         &nbsp;
+        <?php
+        the_main_page_sideshow_content(null,null,889215);
+        ?>
         </div>
           <div class="pecset_kotel">
         &nbsp;
