@@ -141,9 +141,8 @@ white-space: nowrap;
 }
 
 #main-menu .menu-item {
-	  color: white;
+	  color: #d6b56e;	
 	margin: 5px 5px 5px 5px;
-	background: #597d8b;
 	padding: 10px 5px 5px 5px;
 	border-radius: 3px;
 	text-align: center;
@@ -178,8 +177,19 @@ white-space: nowrap;
 
 
 #main-menu .menu-item  a {
-	  color: white;
+	  color:  #d6b56e;
+	 
 	
+}
+
+#main-menu .menu-item ul li  a {
+	
+	 	background-image: url('/wp-content/themes/understrap/src/img/hatter.jpg');
+		border-radius: 3px;
+}
+
+#main-menu .dropdown-menu{
+	background: #b0402e;
 }
 
 .ertek-also-sav {
