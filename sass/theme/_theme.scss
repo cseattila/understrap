@@ -262,7 +262,7 @@ font-family: '	TrajanPro-Regular';
 
 .main-sideshow-conatiner .pecset_felso {
 	position: absolute;
-	top:150px;
+	top: calc(50% - 75px) ;
 	height: 150px;
 	width: 150px;
 	left: calc(50% - 75px);
@@ -275,10 +275,11 @@ font-family: '	TrajanPro-Regular';
 	position: absolute;
 	background-image:  url('/wp-content/themes/understrap/src/img/kotel.png'); 
 	height: 22px;
-	top:220px;
+	top: calc(50% - 11px) ;
     background-size:  contain, cover;
 	width: 100%;
 	left: 0px;
+	background-repeat: repeat-x;
 	    z-index: 100;
 	
 }
