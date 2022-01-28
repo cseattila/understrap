@@ -73,18 +73,26 @@ $container = get_theme_mod( 'understrap_container_type' );
 					} else {
 						the_custom_logo();
 						?>
-						<div class="webcim"> Makó város értéktárának kincsei </div>
 						
-					<?php 
-					}
-					?>
-					<!-- end custom logo -->
-
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+				<div class="menu_2_soros" >
+						
+				<div class="menu_felso_sor" >		
+						<div class="webcim"> Makó város értéktárának kincsei </div>
+    						
+    					<?php 
+    					}
+    					?>
+    					<!-- end custom logo -->
+    
+    
+                  <!-- Ha nem fér ki akkor ez lesz a menű előhozója -->
+    				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+    					<span class="navbar-toggler-icon"></span>
+    				</button>
+				
+				 </div>
 					
-
+               <div class="menu also sor"  >
 
 				<!-- The WordPress Menu goes here -->
 				<?php
@@ -101,6 +109,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 					)
 				);
 				?>
+				
+				     </div>
+				</div>
 			<?php if ( 'container' === $container ) : ?>
 			</div><!-- .container -->
 			<?php endif; ?>

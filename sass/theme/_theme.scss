@@ -90,9 +90,10 @@ display: flex;
 .webcim{
 	  color: #d6b56e;	
 	font-size: 32px;
-	width :250px;
+	width :70%;
 	text-align: center;
 	font-family: 'TrajanPro-Bold';
+	margin: auto;
 }
 .erek{
   width: 100%;
@@ -182,8 +183,20 @@ white-space: nowrap;
 	
 }
 
-#main-menu .menu-item ul li  a {
+#main-menu .menu-item  a:hover {
+	  color:  rgb(215, 218, 105);
+	 
 	
+}
+
+#main-menu .menu-item ul li  a {
+	  color:  rgb(0, 0, 0);
+	 	background-image: url('/wp-content/themes/understrap/src/img/hatter.jpg');
+		border-radius: 3px;
+}
+
+#main-menu .menu-item ul li  a:hover {
+	  color:  rgb(234, 0, 0);
 	 	background-image: url('/wp-content/themes/understrap/src/img/hatter.jpg');
 		border-radius: 3px;
 }
@@ -292,5 +305,25 @@ font-family: '	TrajanPro-Regular';
 	background-repeat: repeat-x;
 	    z-index: 100;
 	
+}
+
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.menu_felso_sor{
+	flex-wrap: nowrap;
+	display: flex;
+	
+}
+
+.menu_2_soros{
+	width: 100%;
+}
+
+#navbarNavDropdown ul {
+	margin: auto;
 }
 
