@@ -306,9 +306,9 @@ font-family: '	TrajanPro-Regular';
 
 .main-sideshow-conatiner .kepek {
 	width: calc(95% - 600px);
-	height: 630px;
+
 	margin: auto;
-	background-color: green;
+	
 }
 
 .main-sideshow-conatiner{
@@ -317,7 +317,7 @@ font-family: '	TrajanPro-Regular';
 
 .main-sideshow-conatiner .pecset_felso {
 	position: absolute;
-	top: calc(50% - 75px) ;
+	top: calc(90% - 75px) ;
 	height: 150px;
 	width: 150px;
 	left: calc(50% - 75px);
@@ -340,7 +340,7 @@ font-family: '	TrajanPro-Regular';
 	position: absolute;
 	background-image:  url('/wp-content/themes/understrap/src/img/kotel.png'); 
 	height: 22px;
-	top: calc(50% - 11px) ;
+	top: calc(90% - 11px) ;
     background-size:  contain, cover;
 	width: calc(95% - 600px);
 	left: calc( 300px + 2.5%);
