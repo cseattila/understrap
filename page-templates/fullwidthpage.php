@@ -39,16 +39,16 @@ function the_main_page_sideshow_content( $more_link_text = null, $strip_teaser =
     
     	<div style="display: flex;">
             <div class="foldal-idezet-ball">           
-          "A makóit összeköti a makóival
-- nemcsak a kortárssal,
-hanem az elmúlt
-és az eljövendő korok
-makói polgáraival is -,
-az ország vagy a világ
-más tájain élő ember számára pedig
-érdekessé és tiszteletre méltóvá teszi
-a várost, a közösséget."
-
+          "A makóit összeköti a makóival</br>
+- nemcsak a kortárssal,</br>
+hanem az elmúlt</br>
+és az eljövendő korok</br>
+makói polgáraival is -,</br>
+az ország vagy a világ</br>
+más tájain élő ember számára pedig</br>
+érdekessé és tiszteletre méltóvá teszi</br>
+a várost, a közösséget."</br>
+</br>
 Lázár János
                     
                  </div>
