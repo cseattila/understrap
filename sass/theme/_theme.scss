@@ -103,12 +103,41 @@ display: flex;
 	display: flex; /* Standard syntax */
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
   .erek {
     flex-direction: column;
   }
+  .foldal-idezet-ball {
+	display: none;
+  }
+  
+  .foldal-idezet-jobb{
+	display: none;
+	}
+	
+	.main-sideshow-conatiner .kepek {
+	width: 80% !important;
+	}
 }
 
+  .foldal-idezet-ball {
+	width:300px;
+	padding: 30px 30px 30px 60px;
+	
+	font-family: 'TrajanPro-Bold';
+	 font-style: italic;
+  }
+
+ .foldal-idezet-jobb {
+	width:300px;
+	padding: 30px 60px 30px 30px;
+	
+	font-family: 'TrajanPro-Bold';
+	 font-style: italic;
+  }
+  
+ 
+  
 .helper {
     display: inline-block;
     height: 100%;
@@ -272,11 +301,14 @@ font-family: '	TrajanPro-Regular';
 	max-width: 100%;
 }
 
+
+
+
 .main-sideshow-conatiner .kepek {
-	width: 80%;
+	width: calc(95% - 600px);
 	height: 630px;
-   
 	margin: auto;
+	background-color: green;
 }
 
 .main-sideshow-conatiner{
@@ -294,14 +326,24 @@ font-family: '	TrajanPro-Regular';
 	    z-index: 101;
 }
 
+
+
+@media screen and (max-width: 1200px) {
+.main-sideshow-conatiner .pecset_kotel  {
+   width: 80% !important; 
+   left: 10% !important;
+  }
+
+}
+
 .main-sideshow-conatiner .pecset_kotel {
 	position: absolute;
 	background-image:  url('/wp-content/themes/understrap/src/img/kotel.png'); 
 	height: 22px;
 	top: calc(50% - 11px) ;
     background-size:  contain, cover;
-	width: 100%;
-	left: 0px;
+	width: calc(95% - 600px);
+	left: calc( 300px + 2.5%);
 	background-repeat: repeat-x;
 	    z-index: 100;
 	
@@ -326,4 +368,3 @@ font-family: '	TrajanPro-Regular';
 #navbarNavDropdown ul {
 	margin: auto;
 }
-

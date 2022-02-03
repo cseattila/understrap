@@ -36,12 +36,34 @@ function the_main_page_sideshow_content( $more_link_text = null, $strip_teaser =
 
 <div class="wrapper" id="full-width-page-wrapper">
     <div class="main-sideshow-conatiner">
-        <div class="kepek">   
-        &nbsp;
-        <?php
-        the_main_page_sideshow_content(null,null,889215);
-        ?>
-        </div>
+    
+    	<div style="display: flex;">
+            <div class="foldal-idezet-ball">           
+          "A makóit összeköti a makóival
+- nemcsak a kortárssal,
+hanem az elmúlt
+és az eljövendő korok
+makói polgáraival is -,
+az ország vagy a világ
+más tájain élő ember számára pedig
+érdekessé és tiszteletre méltóvá teszi
+a várost, a közösséget."
+
+Lázár János
+                    
+                 </div>
+                <div class="kepek">   
+                &nbsp;
+                <?php
+                the_main_page_sideshow_content(null,null,889215);
+                ?>
+                </div>
+          <div class="foldal-idezet-jobb">           
+          "Ami jó az jó "
+                    Csengeri Attila
+                 </div>
+        	</div>
+        
           <div class="pecset_kotel">
         &nbsp;
         </div>
