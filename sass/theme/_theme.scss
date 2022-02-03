@@ -127,7 +127,16 @@ display: flex;
 	font-family: 'Roboto Black';
 	font-size: 15px;
 	 font-style: italic;
+	
+	 display: table;
   }
+
+ .foldal-idezet-ball div {
+	 display: table-cell;
+	 vertical-align: middle;
+	}
+	
+  
 
  .foldal-idezet-jobb {
 	width:300px;

@@ -38,7 +38,8 @@ function the_main_page_sideshow_content( $more_link_text = null, $strip_teaser =
     <div class="main-sideshow-conatiner">
     
     	<div style="display: flex;">
-            <div class="foldal-idezet-ball">           
+            <div class="foldal-idezet-ball">   
+            <div>         <div> 
           "A makóit összeköti a makóival</br>
 - nemcsak a kortárssal,</br>
 hanem az elmúlt</br>
@@ -50,7 +51,8 @@ más tájain élő ember számára pedig</br>
 a várost, a közösséget."</br>
 </br>
 Lázár János
-                    
+                 </div>   
+                 </div>
                  </div>
                 <div class="kepek">   
                 &nbsp;
