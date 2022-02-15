@@ -60,7 +60,9 @@ Lázár János
                 the_main_page_sideshow_content(null,null,889215);
                 ?>
                 </div>
-          <div class="foldal-idezet-jobb">           
+          <div class="foldal-idezet-jobb">    
+           <div>
+            <div>       
         "Az érték teszi tartossá az emberek </br>
           közötti szövetséget, együttműködést</br>
           - minden más csak érdekszövetség, </br> 
@@ -70,6 +72,7 @@ Lázár János
           és teszi cselekvőképessé</br>
            a közösséget."</br></br>
                     Farkas Éva Erzsébet
+                     </div> </div>
                  </div>
         	</div>
         
