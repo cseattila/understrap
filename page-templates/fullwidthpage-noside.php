@@ -87,11 +87,16 @@ Lázár János
           <div class="foldal-idezet-jobb">           
           "Az érték teszi tartossá az emberek </br>
           közötti szövetséget, együttműködést</br>
-          - minden más csak érdekszövetség, </br> melynek szavatossága hamar lejár.</br>Az érték célt, tartást, <br> önmeghatározást ad,</br>
-          és teszi cselekvőképessé</br> a közösséget."
+          - minden más csak érdekszövetség, </br> 
+          melynek szavatossága hamar lejár.</br>
+          Az érték célt, tartást, <br>
+           önmeghatározást ad,</br>
+          és teszi cselekvőképessé</br>
+           a közösséget."</br></br>
                     Farkas Éva Erzsébet
                  </div>
-        	</div>
+   </div>
+        	
         
           <div class="pecset_kotel2">
         &nbsp;
