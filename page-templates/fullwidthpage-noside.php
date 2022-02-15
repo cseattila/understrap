@@ -85,8 +85,11 @@ Lázár János
 	</div><!-- #content -->
                 </div>
           <div class="foldal-idezet-jobb">           
-          "Ami jó az jó "
-                    Csengeri Attila
+          "Az érték teszi tartossá az emberek </br>
+          közötti szövetséget, együttműködést</br>
+          - minden más csak érdekszövetség, </br> melynek szavatossága hamar lejár.</br>Az érték célt, tartást, <br> önmeghatározást ad,</br>
+          és teszi cselekvőképessé</br> a közösséget."
+                    Farkas Éva Erzsébet
                  </div>
         	</div>
         
