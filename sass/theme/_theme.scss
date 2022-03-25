@@ -40,6 +40,7 @@ display: flex;
 }
 
 
+
 .ertek-name  {
 	margin-top: 25px;
 	
@@ -179,12 +180,13 @@ display: flex;
 
 .erek-leftside {
 
-	padding: 2px;
+	padding: 0px;
 		min-width: 300px;
 	-webkit-flex: 1; /* Safari */
 	-ms-flex: 1; /* IE 10 */
 	flex: 1; /* Standard syntax */
-	 text-align: center; margin: 1em 0;
+	 text-align: center; 
+	 margin: 0 0;
 	float:left; 
 white-space: nowrap;
 }
