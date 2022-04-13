@@ -55,7 +55,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<?php if ( 'container' === $container ) : ?>
 			<div class="container">
 		<?php endif; ?>
-
+		<div id="menu_sorok">
+		  
+	       <div class="menu_1_soros" id="fomenu_1_soros" >
 					<!-- Your site title as branding in the menu -->
 					<?php if ( ! has_custom_logo() ) { ?>
 
@@ -73,11 +75,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 					} else {
 						the_custom_logo();
 						?>
-						
-				<div class="menu_2_soros" >
+			</div>	
+			 <div class="menu_pre_2_soros" id="menu_pre_2_soros" > &nbsp; </div>
+			<div class="menu_2_soros" id="fomenu_2_soros" >
 						
 				<div class="menu_felso_sor" >		
-						<div class="webcim"> Makó város értéktárának kincsei </div>
+						<div class="webcim"> Makó város  <br> értéktárának kincsei </div>
     						
     					<?php 
     					}
@@ -91,7 +94,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     				</button>
 				
 				 </div>
-					
+					 <div class="menu_after_2_soros" id="menu_after_2_soros" > &nbsp; </div>
                <div class="menu also sor"  >
 
 				<!-- The WordPress Menu goes here -->
@@ -111,7 +114,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 				?>
 				
 				     </div>
-				</div>
+		</div><!-- class="menu_2_soros" -->
+		
+		</div> 
 			<?php if ( 'container' === $container ) : ?>
 			</div><!-- .container -->
 			<?php endif; ?>

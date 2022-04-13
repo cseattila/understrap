@@ -17,7 +17,33 @@
 		float:left; 
 }
 
+#main-nav {
+	border-style: solid;
+    border-width: 10px 1px;
+    border-color: rgb(245, 233, 171);
+}
 
+
+.custom-logo-link::after{
+    content: "\a";
+    white-space: pre;
+}
+
+#fomenu_1_soros {
+    margin:auto;
+        width: 100px;
+}
+
+#menu_after_2_soros, #menu_pre_2_soros {
+		background-image: url('/wp-content/themes/understrap/img/borito-disz-1024x20.png');
+		background-repeat: no-repeat;
+		max-height:15px;
+		background-size:  contain, cover;
+}
+
+#menu_sorok{
+	   margin:auto;
+}
 .eretek-name-main-content {
 
   width:100%;
@@ -91,8 +117,8 @@ display: flex;
 
 .webcim{
 	  color: #d6b56e;	
-	font-size: 36px;
-	width :70%;
+	font-size: 50px;
+	width :100%;
 	text-align: center;
 	font-family: 'TrajanPro-Bold';
 	margin: auto;
