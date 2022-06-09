@@ -77,6 +77,28 @@ function get_ertek_kategoria_szin(){
 function get_ertek_kategoria_cimer(){
     return get_ertek_kategoria_property('ert_cimer',"wp-content/uploads/2021/08/HUN_Mako_Cimer_2.png");
 }
+
+function isLinkLike($esejes){
+  
+    return preg_match("/www.*/i",$esejes) ==1;
+}
+
+
+
+function alakitHaLink($n)
+{
+    
+    if (isLinkLike($n))
+        return
+        "<a href=\"http://".$n."\">".$n."</a>";
+        else 
+    return ($n );
+}
+
+function changeTolink ( array $pieces) {
+    return  array_map('alakitHaLink', $pieces);
+}
+
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
@@ -122,7 +144,8 @@ function get_ertek_kategoria_cimer(){
     	</div>
 	</div>
 	<div class="ertek-forras">
-	Forrás: </br> <?php echo implode("</br>",get_post_custom_values('forrás')); ?>
+	Forrás: </br> <?php echo implode("</br>",changeTolink(get_post_custom_values('forrás'))); ?>
+	
 	</div>
 	
 	
